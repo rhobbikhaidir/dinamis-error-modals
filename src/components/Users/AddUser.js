@@ -37,7 +37,7 @@ const AddUser = (props) => {
   const ageChangeHandler = (e) => {
     setEnteredAge(e.target.value);
   };
-  const ErrorHandlers = () => {
+  const ErrorHandler = () => {
     setError(null);
   };
 
@@ -47,7 +47,7 @@ const AddUser = (props) => {
         <ErrorModal
           title={error.title}
           message={error.message}
-          onConfirm={ErrorHandlers}
+          onConfirm={ErrorHandler}
         />
       )}
       <Card className={classes.input}>
